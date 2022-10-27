@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.pricing{
+    width: 100%;
+    padding: 6rem 0;
+    background-image: url(../asset/back_pic3.jpg);
+} 
+.card-container {
+    max-width:1340px;
+    margin: auto;
+    display: grid;
+    grid-gap:40px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card-container .card{
+    
+    border: 2px solid black;
+    color: black;
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+    padding: 1rem;
+    height: 750px;
+}
+
+.card:hover{
+    background-color:rgb(216, 217, 217)
+}
+.card h3{
+    font-size:1.4rem;
+    padding: 1rem;
+    color: black;
+}
+.card .bar{
+    border-bottom: 2px solid rgb(197, 76, 76);
+    width: 15%;
+    margin: 1.5rem auto;
+    display: block;
+}
+.card .btc{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+.pricing p{
+    color: black;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.card .btn{
+    display: block;
+    width:80%;
+    margin: 2rem auto;
+     padding: 12px 32px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    cursor: pointer;
+} 
+
+  .btn:hover{
+    border: 3px solid black;
+    transform: scale(1.05);
+    background: rgb(253, 253, 253);
+    
+  } 
+    
+
+@media screen and (max-width:900px){
+    .card-container{
+        max-width:90%;
+        margin:auto;
+        grid-template-columns: 1fr;
+    }
+}
